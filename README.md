@@ -37,14 +37,9 @@ Fora do horário de aula ou monitoria:
 
 ### Parte prática
 
-| script                                        | link                                                                                                         |
-| :-------------------------------------------- | :----------------------------------------------------------------------------------------------------------- |
-| 01-exercicios-slides-pt1.Rmd                  | <https://curso-r.github.io/202103-regressao-linear/exercicios/01-exercicios-slides-pt1.Rmd>                  |
-| 02-exercicios-slides-pt2.Rmd                  | <https://curso-r.github.io/202103-regressao-linear/exercicios/02-exercicios-slides-pt2.Rmd>                  |
-| 03-exercicio-regressao-simples-e-multipla.Rmd | <https://curso-r.github.io/202103-regressao-linear/exercicios/03-exercicio-regressao-simples-e-multipla.Rmd> |
-| 04-exercicio-anova.Rmd                        | <https://curso-r.github.io/202103-regressao-linear/exercicios/04-exercicio-anova.Rmd>                        |
-| 05-exercicio-teoricas-e-matrizes.Rmd          | <https://curso-r.github.io/202103-regressao-linear/exercicios/05-exercicio-teoricas-e-matrizes.Rmd>          |
-| 99-tcc.Rmd                                    | <https://curso-r.github.io/202103-regressao-linear/exercicios/99-tcc.Rmd>                                    |
+| script                       | link                                                                                        |
+| :--------------------------- | :------------------------------------------------------------------------------------------ |
+| 01-exercicios-slides-pt1.Rmd | <https://curso-r.github.io/202103-regressao-linear/exercicios/01-exercicios-slides-pt1.Rmd> |
 
 ## Lição de casa
 
