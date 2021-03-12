@@ -35,8 +35,7 @@ skim(penguins)
 penguins %>% ggpairs()
 ```
 
-
-# Relação entre species e island
+# Relação entre species e island.
 
 ```{r}
 penguins %>%
@@ -47,6 +46,7 @@ penguins %>%
   geom_col() +
   facet_grid(~species) 
 ```
+
 
 
 # Variável resposta: Bill length
