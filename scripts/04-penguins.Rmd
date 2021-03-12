@@ -100,7 +100,7 @@ p_species+p_island+p_sex
 
 # Modelagem
 
-## Passo 1) modelo full
+## Passo 1) modelo full 
 
 ```{r}
 mod1 <- lm(bill_length_mm ~ species*(. - island), data = penguins)
