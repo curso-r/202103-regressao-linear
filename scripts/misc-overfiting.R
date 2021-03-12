@@ -3,6 +3,7 @@ library(broom)
 library(tidyverse)
 library(gganimate)
 library(caret)
+set.seed(42)
 set.seed(1)
 theme_set(theme_minimal(20))
 
