@@ -5,6 +5,7 @@ library(rsample)
 library(purrr)
 library(modelr)
 library(magick)
+library(ggplot2)
 
 set.seed(1)
 
