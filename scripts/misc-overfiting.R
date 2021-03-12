@@ -23,6 +23,7 @@ ggplot(df, aes(x = x, y = y)) +
   geom_point()
 
 
+
 polinomios <- tibble(
   grau = 1:9
 ) %>%
