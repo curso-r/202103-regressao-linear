@@ -87,6 +87,12 @@ library(gtsummary)
 tbl_regression(estimador_de_saldo)
 ```
 
+2 + 2 é igual a 4.
+
+```{r}
+2+2
+```
+
 
 ```{r}
 credit_com_predicoes <- broom::augment(estimador_de_saldo) %>%
