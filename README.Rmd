@@ -80,29 +80,9 @@ knitr::kable(
 )
 ```
 
-## Lição de casa
-
-```{r}
-readxl::read_excel("tab_exercicios.xlsx") %>%
-  dplyr::filter(extra == "nao", aula <= num_aula) %>% 
-  dplyr::mutate(link = glue::glue("[{desc}]({url})")) %>%
-  dplyr::select(-desc, -url, -extra) %>%
-  knitr::kable(col.names = c("Aula", "Descrição"))
-```
-
-## Lição de casa extra &#x1f913;
-
-```{r}
-readxl::read_excel("tab_exercicios.xlsx") %>%
-  dplyr::filter(extra == "sim", aula <= num_aula) %>% 
-  dplyr::mutate(link = glue::glue("[{desc}]({url})")) %>%
-  dplyr::select(-desc, -url, -extra) %>%
-  knitr::kable(col.names = c("Aula", "Descrição"))
-```
-
 ## Material extra
 
-Referências extras comentadas nas aulas.
+Referências extras comentadas (ou não) nas aulas.
 
 ```{r}
 readxl::read_excel("referencias_extras.xlsx") %>%
@@ -122,67 +102,6 @@ readxl::read_excel("referencias_extras.xlsx") %>%
   dplyr::select(-desc, -url) %>%
   knitr::kable(col.names = c("Aula", "Tema", "Descrição"))
 ```
-
-
-## Referências
-
-
-#### Programação em R
-
-- [Livro da Curso-R (Curso-R)](https://livro.curso-r.com/)
-- [Nosso blog](https://curso-r.com/blog/)
-- [Tidyverse (Wickham H)](https://www.tidyverse.org/)
-- [R for Data Science (Wickham H)](https://r4ds.had.co.nz/)
-- [Advanced R (Wickham H)](https://adv-r.hadley.nz/)
-
-#### Regressão Linear - Inferência
-
-- [Ciência de Dados: Fundamentos e Aplicações](https://curso-r.github.io/main-regressao-linear/referencias/Ci%C3%AAncia%20de%20Dados.%20Fundamentos%20e%20Aplica%C3%A7%C3%B5es.%20Vers%C3%A3o%20parcial%20preliminar.%20maio%20Pedro%20A.%20Morettin%20Julio%20M.%20Singer.pdf)
-- [Livro do Gilberto Paula](https://www.ime.usp.br/~giapaula/texto_2013.pdf)
-- Estatística básica 7a edição - BUSSAB e MORETTIN
-- [Tese sobre Regressão Linear da Sandra Rodrigues](https://ubibliorum.ubi.pt/bitstream/10400.6/1869/1/Tese%20Sandra%20Rodrigues.pdf)
-- [Aplicação de Regressão Linear Simples](https://www.ime.usp.br/~giapaula/slides_exemplo_cfoguete.pdf)
-- [Introduction to Econometrics with R](https://www.econometrics-with-r.org/6-5-the-distribution-of-the-ols-estimators-in-multiple-regression.html)
-
-#### Regressão Linear - Predição
-
-- [Aprendizagem de Máquinas: Uma Abordagem Estatística (Rafael Izbicki e Thiago Mendonça, 2020)](http://www.rizbicki.ufscar.br/AME.pdf)
-- [Introduction to Statistical Learning (Hastie, et al)](https://www.ime.unicamp.br/~dias/Intoduction%20to%20Statistical%20Learning.pdf)
-- [Elements of Statistical Learning (Hastie, et al)](https://web.stanford.edu/~hastie/Papers/ESLII.pdf)
-- [Computer Age Statistical Inference (Hastie, Efron)](https://web.stanford.edu/~hastie/CASI_files/PDF/casi.pdf)
-- [Tidymodels (Kuhn, et al)](https://www.tidymodels.org/)
-- [Feature Engineering and Selection: A Practical Approach for Predictive Models (Kuhn, Kjell)](http://www.feat.engineering/)
-- [Kaggle](https://www.kaggle.com/)
-
-## Referências
-
-
-#### Programação em R
-
-- [Livro da Curso-R (Curso-R)](https://livro.curso-r.com/)
-- [Tidyverse (Wickham H)](https://www.tidyverse.org/)
-- [R for Data Science (Wickham H)](https://r4ds.had.co.nz/)
-- [Advanced R (Wickham H)](https://adv-r.hadley.nz/)
-
-#### Regressão Linear - Inferência
-
-- [Ciência de Dados: Fundamentos e Aplicações](https://curso-r.github.io/main-regressao-linear/referencias/Ci%C3%AAncia%20de%20Dados.%20Fundamentos%20e%20Aplica%C3%A7%C3%B5es.%20Vers%C3%A3o%20parcial%20preliminar.%20maio%20Pedro%20A.%20Morettin%20Julio%20M.%20Singer.pdf)
-- [Blog dos Trabalhos de Regressão Linear com R](https://curso-r.github.io/trabalhos-regressao-linear/)
-- [Livro do Gilberto Paula](https://www.ime.usp.br/~giapaula/texto_2013.pdf)
-- Estatística básica 7a edição - BUSSAB e MORETTIN
-- [Tese sobre Regressão Linear da Sandra Rodrigues](https://ubibliorum.ubi.pt/bitstream/10400.6/1869/1/Tese%20Sandra%20Rodrigues.pdf)
-- [Aplicação de Regressão Linear Simples](https://www.ime.usp.br/~giapaula/slides_exemplo_cfoguete.pdf)
-- [Introduction to Econometrics with R](https://www.econometrics-with-r.org/6-5-the-distribution-of-the-ols-estimators-in-multiple-regression.html)
-
-#### Regressão Linear - Predição
-
-- [Aprendizagem de Máquinas: Uma Abordagem Estatística (Rafael Izbicki e Thiago Mendonça, 2020)](http://www.rizbicki.ufscar.br/AME.pdf)
-- [Introduction to Statistical Learning (Hastie, et al)](https://www.ime.unicamp.br/~dias/Intoduction%20to%20Statistical%20Learning.pdf)
-- [Elements of Statistical Learning (Hastie, et al)](https://web.stanford.edu/~hastie/Papers/ESLII.pdf)
-- [Computer Age Statistical Inference (Hastie, Efron)](https://web.stanford.edu/~hastie/CASI_files/PDF/casi.pdf)
-- [Tidymodels (Kuhn, et al)](https://www.tidymodels.org/)
-- [Feature Engineering and Selection: A Practical Approach for Predictive Models (Kuhn, Kjell)](http://www.feat.engineering/)
-- [Kaggle](https://www.kaggle.com/)
 
 
 ## Redes sociais da Curso-R
