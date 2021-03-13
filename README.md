@@ -1,16 +1,16 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+## Configuração: Criar um projeto do RStudio
+
+Faça um projeto do RStudio para usar durante todo o curso. O código
+abaixo irá fazer isso para você.
+
 ## Referências do curso
 
 [Clique
 aqui](https://github.com/curso-r/main-regressao-linear/raw/master/material_do_curso.zip)
 para baixar o material do curso.
-
--   R for Data Science: <https://r4ds.had.co.nz/> (em inglês) e
-    <https://es.r4ds.hadley.nz/> (em espanhol).
-
--   Nosso blog: <https://curso-r.com/blog/>
 
 ## Dúvidas
 
@@ -70,6 +70,7 @@ relacionadas com o conteúdo da aula).
 #### Programação em R
 
 -   [Livro da Curso-R (Curso-R)](https://livro.curso-r.com/)
+-   [Nosso blog](https://curso-r.com/blog/)
 -   [Tidyverse (Wickham H)](https://www.tidyverse.org/)
 -   [R for Data Science (Wickham H)](https://r4ds.had.co.nz/)
 -   [Advanced R (Wickham H)](https://adv-r.hadley.nz/)
