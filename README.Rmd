@@ -84,23 +84,38 @@ knitr::kable(
 
 Referências extras comentadas (ou não) nas aulas.
 
+### Programação em R
+
 ```{r}
 readxl::read_excel("referencias_extras.xlsx") %>%
-  dplyr::filter(aula <= num_aula, tema != "Conversa/Dúvidas") %>% 
+  dplyr::filter(aula <= num_aula, tema == "Programação em R") %>% 
   dplyr::mutate(link = glue::glue("[{desc}]({url})")) %>%
-  dplyr::select(-desc, -url) %>%
+  dplyr::select(-desc, -url, -tema) %>%
   dplyr::arrange(num_aula) %>% 
-  knitr::kable(col.names = c("Aula", "Tema", "Descrição"))
+  knitr::kable(col.names = c("Aula", "Descrição"))
 ```
 
-Materiais que comentamos quando tiramos dúvidas (não necessariamente são relacionadas com o conteúdo da aula).
+
+### Regressão Linear - Inferência
 
 ```{r}
 readxl::read_excel("referencias_extras.xlsx") %>%
-  dplyr::filter(aula <= num_aula, tema == "Conversa/Dúvidas") %>% 
+  dplyr::filter(aula <= num_aula, tema == "Regressão Linear - Inferência") %>% 
   dplyr::mutate(link = glue::glue("[{desc}]({url})")) %>%
-  dplyr::select(-desc, -url) %>%
-  knitr::kable(col.names = c("Aula", "Tema", "Descrição"))
+  dplyr::select(-desc, -url, -tema) %>%
+  dplyr::arrange(num_aula) %>% 
+  knitr::kable(col.names = c("Aula", "Descrição"))
+```
+
+### Regressão Linear - Predição
+
+```{r}
+readxl::read_excel("referencias_extras.xlsx") %>%
+  dplyr::filter(aula <= num_aula, tema == "Regressão Linear - Predição") %>% 
+  dplyr::mutate(link = glue::glue("[{desc}]({url})")) %>%
+  dplyr::select(-desc, -url, -tema) %>%
+  dplyr::arrange(num_aula) %>% 
+  knitr::kable(col.names = c("Aula", "Descrição"))
 ```
 
 
