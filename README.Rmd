@@ -22,7 +22,7 @@ num_aula <- 1
 
 Faça um projeto do RStudio para usar durante todo o curso. O código abaixo irá fazer isso para você.
 
-```{r, eval=FALSE}
+```{r, eval=FALSE, echo = TRUE}
 install.packages("usethis")
 usethis::create_project("regressaolinear202103")
 ```

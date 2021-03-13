@@ -6,6 +6,11 @@
 Faça um projeto do RStudio para usar durante todo o curso. O código
 abaixo irá fazer isso para você.
 
+``` r
+install.packages("usethis")
+usethis::create_project("regressaolinear202103")
+```
+
 ## Referências do curso
 
 [Clique
